@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>Sincronizar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <img [src]="photo" alt="" *ngIf="photo">
+  <button ion-button block *ngIf="photo" color="secondary">
+      <ion-icon class="icones" ios="ios-sync" md="md-sync"></ion-icon> Sincronizar dados com o servidor
+  </button>
+
+  <button ion-button block (tap)="sincronizar()">
+      <ion-icon class="icones" ios="ios-camera" md="md-camera"></ion-icon> Tirar Foto
+  </button>
+
+</ion-content>
